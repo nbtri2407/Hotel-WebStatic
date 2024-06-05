@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/room.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="menu-container">
+        <div class="grid menu">
+          <a href="index.html">Home</a>
+          <a href="./allRoom.html">Rooms</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+      </div>
+      <div class="grid flex-center navbar">
+        <div class="nav">
+          <div class="nav-head flex-center">
+            <p>Hotel</p>
+          </div>
+          <div class="nav-body flex-center">
+            <h1>LOTTE HOTEL HANOI</h1>
+          </div>
+        </div>
+        <div class="nav border-left">
+          <div class="nav-head flex-center">
+            <p>Check-in</p>
+            <p>Check-out</p>
+          </div>
+          <div class="nav-body flex-center">
+            <h1>Mon,Jun 3</h1>
+            <h1>1Night(s)</h1>
+            <h1>Tue,Jun4</h1>
+          </div>
+        </div>
+        <div class="nav border-left" style="max-width: 300px">
+          <div class="flex-center">
+            <div class="nav-col flex-center">
+              <p>Room</p>
+              <h1>1</h1>
+            </div>
+            <div class="nav-col flex-center">
+              <p>Adults</p>
+              <h1>2</h1>
+            </div>
+            <div class="nav-col flex-center">
+              <p>Children</p>
+              <h1>0</h1>
+            </div>
+          </div>
+        </div>
+        <div class="nav border-left">
+          <div class="nav-body flex-center">
+            <div class="pcode flex-center">
+              <i class="fa-solid fa-tag"></i>
+              <p class="showDialog">Promotion Code</p>
+              <div class="dialog">
+                <div class="close-dialog">
+                  <i class="fa-solid fa-xmark" id="close-dialog"></i>
+                </div>
+                <div class="dialog-header">
+                  <div class="dropdown">
+                    <div class="dropbtn">
+                      <span class="dropbtn-text">Group</span>
+                      <i
+                        class="fa-solid fa-chevron-up arrow"
+                        id="dropbtn-arrow"
+                      ></i>
+                    </div>
+                    <div class="dropdown-content">
+                      <a href="#" class="dropdown-item" data-value="Corporate"
+                        >Corporate</a
+                      >
+                      <a
+                        href="#"
+                        class="dropdown-item"
+                        data-value="Travel Agency"
+                        >Travel Agency</a
+                      >
+                      <a href="#" class="dropdown-item" data-value="Group"
+                        >Group</a
+                      >
+                    </div>
+                  </div>
+                  <input type="text" placeholder="Input here..." />
+                  <button class="checkbtn">Check</button>
+                </div>
+              </div>
+            </div>
+            <button class="search-btn">SEARCH</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="slider-container">
+        <div class="slide"><img src="../images/b1.png" alt="Image 1" /></div>
+        <div class="slide"><img src="../images/b2.png" alt="Image 2" /></div>
+        <div class="slide"><img src="../images/b1.png" alt="Image 3" /></div>
+      </div>
+      <a class="prev" id="prev">&#10094;</a>
+      <a class="next" id="next">&#10095;</a>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      <div class="menu-icon">
+        <div class="menu-icon-item">
+          <i class="fa-sharp fa-solid fa-ticket"></i>
+        </div>
+        <div class="menu-icon-item">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="menu-icon-item">
+          <i class="fa-sharp fa-solid fa-comment-dots"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-room-list-btn">
+      <i class="fa-solid fa-arrow-left show" id="show-list"></i>
+      <i class="fa-solid fa-xmark hidden" id="close-list"></i>
+    </div>
+    <div class="room-list">
+      <div class="room-item">
+        <div class="room-item-body">
+          <img class="room-img" src="../images/room1.png" alt="" />
+          <div class="room-item-heading">
+            <h1>Deluxe Room</h1>
+            <p>Bữa sáng buffet cho 2 người lớn và 2 trẻ em dưới 5 tuổi.</p>
+          </div>
+        </div>
+        <a href="room1.html" class="room-item-btn">View Details</a>
+      </div>
+      <div class="room-item">
+        <div class="room-item-body">
+          <img class="room-img" src="../images/room2.png" alt="" />
+          <div class="room-item-heading">
+            <h1>Executive Room</h1>
+            <p>Bữa sáng buffet cho 2 người lớn và 2 trẻ em dưới 5 tuổi.</p>
+          </div>
+        </div>
+        <a href="#" class="room-item-btn">View Details</a>
+      </div>
+      <div class="room-item">
+        <div class="room-item-body">
+          <img class="room-img" src="../images/room3.png" alt="" />
+          <div class="room-item-heading">
+            <h1>Presidential Suite Room</h1>
+            <p>
+              Escape the bustle of Ho Chi Minh city in the most prestigious and
+              luxurious space.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="room-item-btn">View Details</a>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="grid grid_row footer">
+        <div class="">Design by Group ...</div>
+        <div class="grid_row footer-icon">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-twitch"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/85568aa038.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../js/index.js"></script>
+</html>
